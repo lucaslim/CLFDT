@@ -1,14 +1,14 @@
 'use strict';
 
-var $ = require('jquery');
 var angular = require('angular');
+var componentsModule = require('./components/index');
 
 var appName = 'clfdt';
 var appModule = angular.module(appName, [
+ componentsModule.name,
 ])
 .run(function () {
-  console.log(angular);
-  console.log(appName);
+  console.log('Start Application');
 });
 
 angular.bootstrap(document, [appModule.name]);

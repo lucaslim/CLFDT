@@ -1,5 +1,61 @@
-@import 'bootstrap/dist/css/bootstrap.min.css'
+@import 'bootstrap.min.css'
 @import 'nib'
 
+font-roboto = 'Roboto', sans-serif
+color-main =  #86939e
+
 body
+ font-family: font-roboto
  background: white
+
+a
+ &:link, &:visited
+  color: color-main
+ &:hover, &:active
+  transition: all .5s ease
+  text-decoration: none
+  color: darken(color-main, 20%) 
+ 
+header
+ margin-top: 54px
+ // border: 1px solid red
+ .top-buttons
+  text-align: right
+  font-weight: 500
+  color: color-main
+  line-height: 1
+  .free-trial
+   padding:11px 0
+   margin-right: 31px
+  .buy-now
+   border: 2px solid #e1e8ee
+   background: transparent
+   border-radius: 4px
+   padding: 11px 24px
+   transition: all .5s ease
+   &:hover
+    border-color: darken(#e1e8ee, 20%)
+    
+introduction
+ display:block
+ margin-top: 105px
+ .heading
+  text-align:center
+  // border: 1px solid red
+  margin: 0 auto
+  width: 635px
+  h2,h3
+   margin: 0
+   line-height: 1.5
+   font-weight: 300
+  h2
+   margin-bottom: 28px
+   font-size: 52px
+   color: #43484d
+  h3
+   font-size: 22px
+   color: #5e6977
+  
+    
+   
+@import 'media'

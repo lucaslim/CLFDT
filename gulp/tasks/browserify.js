@@ -10,6 +10,7 @@ var watchify     = require('watchify');
 var browserify   = require('browserify');
 var handleErrors = require('../util/handleErrors');
 var browserSync  = require('browser-sync');
+var stringify    = require('stringify');
 
 function buildScript(file) {
 
@@ -31,8 +32,7 @@ function buildScript(file) {
   }
 
   var transforms = [
-
-      // { 'name':'stringify', 'options': { 'extensions': ['.html']}},
+      { 'name':'stringify', 'options': { 'extensions': ['.html']}},
       // { 'name':babelify, 'options': {}},
       // { 'name':ngAnnotate, 'options': {}},
       // { 'name':'brfs-htmlmin', 'options': {}},
