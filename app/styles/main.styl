@@ -37,13 +37,62 @@ header
     border-color: darken(#e1e8ee, 20%)
     
 introduction
+ &>.row
+  margin-left:0
+  margin-right:0
  display:block
  margin-top: 105px
+ margin-bottom: 100px
+ .graph-container
+   position: relative;
+   .tooltip
+     &:after
+       content: '';
+       position:absolute;
+       top: 100%;
+       left: 50%;
+       margin-left: -10px;
+       border-top: solid 10px #838cc7;
+       border-left: solid 10px transparent;
+       border-right: solid 10px transparent;
+     position:absolute
+     background: #838cc7
+     border-radius: 5px
+     padding: 33px
+     color: #fff
+     .value
+       display:block;
+       letter-spacing: 2px
+       font-size: 32px
+       font-weight: 300
+       text-align: center
+     .month
+       display: block;
+       font-size: 16px
+       font-weight: 400
+       text-align: center;
+ .footer
+  h2
+    font-size: 32px
+    font-weight: 300
+    color: #43484c
+    margin: 0 auto
+    width: 920px
+    text-align: center
+    line-height: 1.5
+  button
+    border-radius: 5px
+    color: #fff
+    font-weight: 500
+    background: #7dc855
+    border:1px solid transparent
+    padding: 23px 38px
+    display: block
+    margin: 0 auto
+    margin-top: 40px
  .heading
   text-align:center
-  // border: 1px solid red
   margin: 0 auto
-  width: 635px
   h2,h3
    margin: 0
    line-height: 1.5
@@ -55,7 +104,53 @@ introduction
   h3
    font-size: 22px
    color: #5e6977
-  
+  .buy-now
+   font-size: 16px
+   font-weight: 500
+   background: transparent;
+   border: 1px solid #e1e8ee;
+   border-radius: 5px;
+   padding: 18px 31px;
+   color: #86939e;
+   margin-top: 53px;
+   margin-bottom: 40px;
     
+timeline
+ display:block
+ margin-top: 26px
+ margin-bottom: 155px
+ position: relative
+ .wrapper
+   width: 100%
+   position: relative
+ .line
+   position:relative
+   top: 10px
+   background: #e1e8ee
+   width: 100%;
+   height: 1px;
+ .button
+   cursor: pointer
+   height: 20px
+   width: 42px
+   background: #c2cbd2
+   border-radius: 10px
+   display: inline-block
+   position:relative
+   left: 50%
+   .text
+     font-size:14px
+     color: #86939e
+     width: 120px;
+     margin-left: -30px;
+     margin-top: 10px;
+   .block
+     &:first-child
+       margin-left:15px
+     display: inline-block
+     width: 2px
+     height: 10px
+     background: #e7eaed
+     
    
 @import 'media'

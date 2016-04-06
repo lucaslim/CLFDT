@@ -1,7 +1,7 @@
 'use strict';
 
-var controller = require('./introduction.controller');
-var template = require('./introduction.view.html');
+var controller = require('./timeline.controller');
+var template = require('./timeline.view.html');
 
 module.exports = function() {
  return {

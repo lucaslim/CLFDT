@@ -1,14 +1,19 @@
-'use strict';
+(function() {
+ 'use strict';
 
-var angular = require('angular');
-var componentsModule = require('./components/index');
+ var angular = require('angular');
+ var componentsModule = require('./components/index');
 
-var appName = 'clfdt';
-var appModule = angular.module(appName, [
- componentsModule.name,
-])
-.run(function () {
-  console.log('Start Application');
-});
+ require('angular-chartist.js');
 
-angular.bootstrap(document, [appModule.name]);
+ var appName = 'clfdt';
+ var appModule = angular.module(appName, [
+   'angular-chartist',
+   componentsModule.name,
+  ])
+  .run(function() {
+   console.log('Start Application');
+  });
+
+ angular.bootstrap(document, [appModule.name]);
+}());

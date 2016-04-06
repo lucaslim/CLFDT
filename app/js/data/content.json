@@ -1,6 +1,14 @@
 {
-    "introduction": {
-        "heading": "Share your Files with Ease",
-        "subheading": "We push ourselves to new levels of inspired excellence with each project and we sweat creativity."
-    }
+  "dataset": {
+    "labels": ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+    "datasets": [{
+      "fillColor": "#fbfbfb",
+      "strokeColor": "#e1e8ee",
+      "pointColor": "#e1e8ee",
+      "pointStrokeColor": "#fff",
+      "pointHighlightFill": "#fff",
+      "pointHighlightStroke": "#e1e8ee",
+      "data": [2000, 2533.50, 2200, 2600, 2015, 2200, 3000, 1800.50, 2100, 2300]
+    }]
+  }
 }
