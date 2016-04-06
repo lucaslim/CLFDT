@@ -41,6 +41,7 @@
     "angular": "1.5.3",
     "angular-chartist.js": "3.3.13",
     "angular-chartjs": "0.0.5",
+    "bootstrap": "3.3.6",
     "chart.js": "1.1.0",
     "jquery": "2.2.2",
     "jqueryui": "1.11.1",
